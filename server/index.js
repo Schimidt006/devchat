@@ -9,7 +9,7 @@ io.on("connection", (socket) => {
   socket.on("set_username", (username) => {
     socket.data.username = username;
 
-    console.log(`Bem-vindo ${username} seu id  ${socket.id}!`);
+    console.log(`Bem-vindo ${username} seu id é ${socket.id}!`);
   });
 
   socket.on("message", (text) => {
